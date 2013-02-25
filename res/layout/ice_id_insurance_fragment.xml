@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3371ab" android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#3371ab"
+                android:gravity="center_horizontal"
+                android:padding="20dp" >
+
+                <TextView
+                    android:id="@+id/txtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    android:text="Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtAge"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txtUserName"
+                    android:ems="10"
+                    android:hint="User Name"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/txtUserName"
+                    android:layout_below="@+id/edtUserName"
+                    android:layout_marginTop="20dp"
+                    android:text="Age"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtHeight"
+                    android:layout_below="@+id/edtUserName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:ems="10"
+                    android:hint="22"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView2"
+                    android:layout_below="@+id/edtAge"
+                    android:layout_marginTop="20dp"
+                    android:text="Height"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtWeight"
+                    android:layout_below="@+id/edtAge"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView3"
+                    android:ems="10"
+                    android:hint="6ft/180cms"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView3"
+                    android:layout_below="@+id/edtHeight"
+                    android:layout_marginTop="20dp"
+                    android:text="Weight"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtWeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtBooldType"
+                    android:layout_below="@+id/edtHeight"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:ems="10"
+                    android:hint="50pound/60kg"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView4"
+                    android:layout_below="@+id/edtWeight"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Boold Type"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtBooldType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtWeight"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView5"
+                    android:ems="10"
+                    android:hint="O+"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView5"
+                    android:layout_below="@+id/edtBooldType"
+                    android:layout_marginTop="20dp"
+                    android:text="Speaks"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtSpeaks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtBooldType"
+                    android:layout_below="@+id/edtBooldType"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView6"
+                    android:ems="10"
+                    android:hint="English,German..."
+                    android:singleLine="true" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/textView7"
+                    android:background="#ffffff" android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView6"
+                    android:layout_below="@+id/edtSpeaks"
+                    android:layout_marginTop="20dp"
+                    android:text="Doctor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtDoctorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtSpeaks"
+                    android:layout_below="@+id/edtSpeaks"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView7"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView7"
+                    android:layout_below="@+id/edtDoctorName"
+                    android:layout_marginTop="20dp"
+                    android:text="Dr Phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtDoctorPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtDoctorName"
+                    android:layout_below="@+id/edtDoctorName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView8"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_above="@+id/textView9"
+                    android:background="#ffffff" android:layout_marginBottom="-5dp"/>
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView8"
+                    android:layout_below="@+id/edtDoctorPhone"
+                    android:layout_marginTop="20dp"
+                    android:text="Insurance Co"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtInsuranceCompany"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtDoctorPhone"
+                    android:layout_below="@+id/edtDoctorPhone"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView9"
+                    android:ems="10"
+                    android:hint="Company"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView9"
+                    android:layout_below="@+id/edtInsuranceCompany"
+                    android:layout_marginTop="20dp"
+                    android:text="Insurance"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtInsuranceNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtInsuranceCompany"
+                    android:layout_below="@+id/edtInsuranceCompany"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView10"
+                    android:ems="10"
+                    android:hint="Policy/Insurance ID"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView10"
+                    android:layout_below="@+id/edtInsuranceNumber"
+                    android:layout_marginTop="20dp"
+                    android:text="Agent"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtAgentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtInsuranceNumber"
+                    android:layout_below="@+id/edtInsuranceNumber"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView11"
+                    android:ems="10"
+                    android:hint="Name"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView11"
+                    android:layout_below="@+id/edtAgentName"
+                    android:layout_marginTop="20dp"
+                    android:text="Agent Phone"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtAgentPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtAgentName"
+                    android:layout_below="@+id/edtAgentName"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/textView12"
+                    android:ems="10"
+                    android:hint="Phone number"
+                    android:inputType="number"
+                    android:singleLine="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default_normal"
+            android:text="SAVE"
+            android:textColor="#3371ab" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default_normal"
+            android:text="CANCEL"
+            android:textColor="#3371ab" />
+    </LinearLayout>
+
+</LinearLayout>

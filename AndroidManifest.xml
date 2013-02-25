@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.world.nearby"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/worlrd_nearby_logo"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.NoTitleBar.WithColoredSpinners" >
+        <activity
+            android:name=".WorldNearbyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MapSearchActivity" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ParkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailedResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrDestDirectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CurrDestNavigationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SosActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

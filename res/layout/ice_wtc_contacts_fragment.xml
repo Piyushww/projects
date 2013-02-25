@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#3371ab"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person Info"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtRelation1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RELATION" />
+
+            <EditText
+                android:id="@+id/edtPhone1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PHONE" />
+
+            <View
+                android:id="@+id/View04"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff" />
+
+           <!--  <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person2"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" />
+
+            <EditText
+                android:id="@+id/edtRelation2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RELATION" />
+
+            <EditText
+                android:id="@+id/edtPhone2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PHONE" />
+
+            <View
+                android:id="@+id/View03"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person3"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" />
+
+            <EditText
+                android:id="@+id/edtRelation3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RELATION" />
+
+            <EditText
+                android:id="@+id/edtPhone3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PHONE" />
+
+            <View
+                android:id="@+id/View02"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person4"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" />
+
+            <EditText
+                android:id="@+id/edtRelation4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RELATION" />
+
+            <EditText
+                android:id="@+id/edtPhone4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PHONE" />
+
+            <View
+                android:id="@+id/View01"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dp"
+                android:background="#fff" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Person5"
+                android:textColor="#fff" />
+
+            <EditText
+                android:id="@+id/edtName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="NAME" />
+
+            <EditText
+                android:id="@+id/edtRelation5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="RELATION" />
+
+            <EditText
+                android:id="@+id/edtPhone5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="PHONE" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:background="#fff" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/btnContactsSave"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default_normal"
+            android:text="SAVE"
+            android:textColor="#3371ab" />
+
+        <Button
+            android:id="@+id/btnContactsCancel"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_default_normal"
+            android:text="CANCEL"
+            android:textColor="#3371ab" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4e4"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imgWNPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:src="@drawable/world_nearby" android:scaleType="fitXY"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/imgMapSearch"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/map" />
+
+                    <TextView
+                        android:id="@+id/txtMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/map"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/search" />
+
+                    <TextView
+                        android:id="@+id/txtSearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/search"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/imgPark"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/park" />
+
+                    <TextView
+                        android:id="@+id/txtPark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/park"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <ImageView
+                        android:id="@+id/imgIce"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ice" />
+
+                    <TextView
+                        android:id="@+id/txtIce"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/main_ice"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:background="#e4e4e4"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" android:layout_marginRight="1dp">
+
+                    <ImageView
+                        android:id="@+id/imgSos"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/alert" />
+
+                    <TextView
+                        android:id="@+id/txtSos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/main_sos"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff" >
+
+                    <TextView
+                        android:id="@+id/txtInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="4dp"
+                        android:text="@string/information"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="#0bafe0" />
+
+                    <ImageView
+                        android:id="@+id/imgInfo"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/info" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
